@@ -448,7 +448,7 @@ char* sprintaddr(char* buf, size_t size, struct addrinfo *a)
  *
  * *host gets modified
  **/
-int resolve_split_name(struct addrinfo **out, char* host, const char* serv)
+int resolve_split_name(struct addrinfo **out, const char* host, const char* serv)
 {
    struct addrinfo hint;
    char *end;
